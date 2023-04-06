@@ -59,14 +59,14 @@ header {
   border-radius: 10px;
 }
 .wrapper__title {
-  padding: 137px 824px 24px 85px;
+  padding: 137px 784px 24px 85px;
   font-weight: 900;
   font-size: 72px;
   line-height: 72px;
   color: #fefcf7;
 }
 .wrapper__text {
-  margin: 0 750px 137px 85px;
+  padding: 0 640px 137px 85px;
   font-family: sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -208,6 +208,39 @@ color: #333D4B;
 
 a{
     color: #83888F;
+}
+
+.burger{
+  display: flex;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+  .header{
+    padding: 0 39.9px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .header{
+    padding: 33px 24px;
+  }
+  .header__list{
+    display: none;
+  }
+  .burger{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .burger__item{
+    width: 16px;
+    height: 3px;
+    background: #333D4B;
+    border-radius: 1.5px;
+  }
 }
 
 
